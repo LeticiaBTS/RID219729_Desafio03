@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<header>
+    <h1 id="titulo">Board de Tarefas</h1>
+</header>    
+<main>
+    <!-- Form -->
+    <form id="formulario">
+        <input type="text" id="nomeTarefa" placeholder="Nome da Tarefa">
+        <input type="text" id="etiqueta" placeholder="Etiqueta">
+        <button type="button" id="botaoAdicionar">+</button> 
+    </form>
+
+    <!-- Tarefas -->
+    <ul id="tarefas" role="list">
+
+    <!-- Tarefa normal -->
+        <li class="tarefaItem">
+            <span class="nomeTarefa">implementar tela de listagem de tarefas</span>
+            <span class="etiqueta">backend</span>
+            <span class="data">Criado em: 21/08/2024</span>
+            <button class="botaoConcluir" type="button">Concluir</button>
+        </li>
+        
+    <!-- Tarefa riscada (teste visual - JS remove depois) -->
+        <li class="tarefaItem tarefaConcluida">
+            <span class="nomeTarefa">Criar endpoint cadastro de tarefas</span>
+            <span class="etiqueta">backend</span>
+            <span class="data">Criado em: 21/08/2024</span>
+            <button class="botaoTarefaConcluida" type="button" arial-label="Tarefa concluída">
+                <img src="icones/visto.svg" alt="">
+        </li>
+    </ul>
+</main>
+<footer>
+    <!-- Rodapé contador -->
+     <div class="rodapeContador">
+         <span class="contadorConcluidas">1</span> de 
+         <span class="contadorTotal">3</span> tarefas concluídas
+     </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
