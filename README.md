@@ -42,8 +42,8 @@ Todas as interações são feitas por meio da manipulação do DOM, garantindo u
 
 ##  Estrutura do Projeto
 
-├── index.html
-├── style.css
+├── index.html<br>
+├── style.css<br>
 └── script.js
 
 
